@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopZone - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Shop</span>Zone.
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for products..."
+            >
+
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <button class="cart-button" id="cartBtn">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- Shopping Cart -->
+    <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-heading">
+            <h2>Your Cart</h2>
+            <button id="closeCart">✕</button>
+        </div>
+
+        <div id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <h3>Total: ₹<span id="cartTotal">0</span></h3>
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-tag">BIGGEST SALE OF THE SEASON</p>
+
+            <h1>
+                Discover Amazing<br>
+                Products at Best Prices
+            </h1>
+
+            <p>
+                Shop your favourite products with exciting offers
+                and exclusive discounts.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-subtitle">OUR COLLECTION</p>
+                <h2>Trending Products</h2>
+            </div>
+
+            <p class="product-info">
+                Explore our latest collection
+            </p>
+
+        </div>
+
+        <!-- Products will be loaded dynamically -->
+        <div class="product-container" id="productContainer">
+
+            <p class="loading">Loading products...</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+
+        <div class="benefit-card">
+            <span>🚚</span>
+            <h3>Free Delivery</h3>
+            <p>Free shipping on selected orders.</p>
+        </div>
+
+        <div class="benefit-card">
+            <span>🔒</span>
+            <h3>Secure Payment</h3>
+            <p>Safe and secure shopping experience.</p>
+        </div>
+
+        <div class="benefit-card">
+            <span>⭐</span>
+            <h3>Quality Products</h3>
+            <p>Shop trusted and quality products.</p>
+        </div>
+
+        <div class="benefit-card">
+            <span>💬</span>
+            <h3>24/7 Support</h3>
+            <p>We are always here to help you.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>ShopZone.</h2>
+
+        <p>
+            Your one-stop destination for smart shopping.
+        </p>
+
+        <p class="copyright">
+            © 2026 ShopZone. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
